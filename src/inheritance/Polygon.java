@@ -1,6 +1,7 @@
 package inheritance;
 
 public class Polygon {
+	
 	protected static int height;
 	protected static int width;
 	 
