@@ -11,7 +11,8 @@ public class Car {
 	private String model, engnine, color;
 	
 	public void setModel(String model) {
-		this.model = model;
+		String validModel = model.toLowerCase();
+		this.model = validModel;
 	}
 
 }
