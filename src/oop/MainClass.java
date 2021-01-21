@@ -95,7 +95,6 @@ public class MainClass {
 		Iterator<String> itr = name.iterator();
 		while (itr.hasNext()) System.out.println(itr.next());
 		
-		
 	}
 
 }
