@@ -4,18 +4,21 @@ public class Account {
 	private String number, costomerName, costomerEmail, costomerPhone;
 	private double balance;
 	
+	public Account () {
+		System.out.println("Empty constructor called");
+	}
+	
 	public void deposite(double depositAmount) {
 		this.balance += depositAmount;
 		System.out.println("Deposit of " + depositAmount + " made. new balance is " + this.balance);
 	}
 	
 	public void withdrawal(double withdrawalAmount) {
-		if (this.balance - withdrawalAmount <= 0) {
+		if (this.balance - withdrawalAmount <= 0) 
 			System.out.println("Only " + this.balance + " available. Withdrawal not processed.");
-		} else {
+		 else 
 			this.balance -= withdrawalAmount;
-			System.out.println("Withdrawal of " + withdrawalAmount + " proccessed. Remaining balance = " + this.balance);;
-		}
+			System.out.println("Withdrawal of " + withdrawalAmount + " proccessed. Remaining balance = " + this.balance);
 	}
 	
 	public String getNumber() {
