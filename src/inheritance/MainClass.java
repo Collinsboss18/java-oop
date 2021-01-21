@@ -3,7 +3,7 @@ package inheritance;
 public class MainClass {
 
 	public static void main(String[] args) {
-		// TODO
+		// 
 		Triangle tri = new Triangle();
 		Rectangle rec = new Rectangle();
 		
