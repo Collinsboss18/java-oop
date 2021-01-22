@@ -4,11 +4,6 @@ public class Account {
 	private String number, costomerName, costomerEmail, costomerPhone;
 	private double balance;
 	
-	public Account () {
-		this("83492", 12.23, "Default", "Default", "Default");
-		System.out.println("Empty constructor called");
-	}
-	
 	public Account (String number, double balance, String costomerName, String costomerEmail, String costomerPhone) {
 		System.out.println("Constructor with parameter called");
 		/** It's better not to call SETTERS or other METHOD in constructor.
@@ -22,6 +17,16 @@ public class Account {
 		this.costomerName = costomerName;
 		this.costomerEmail = costomerEmail;
 		this.costomerPhone = costomerPhone;
+	}
+	
+	public Account(String costomerName, String costomerEmail, String costomerPhone) {
+		this("83492", 12.23, "Default", "Default", "Default");
+		System.out.println("Constructor with require name, email and phone called");
+	}
+	
+	public Account () {
+		this("83492", 12.23, "Default", "Default", "Default");
+		System.out.println("Empty constructor called");
 	}
 	
 	public void deposite(double depositAmount) {
