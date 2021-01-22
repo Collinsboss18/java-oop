@@ -28,7 +28,7 @@ public class Main {
 		cmanAccount.deposite(100);
 		cmanAccount.withdrawal(50); */
 		
-		System.out.println("Account Number" + timsAccount.getNumber() + " " + timsAccount.getCostomerName());
+		System.out.println("Account Number " + timsAccount.getNumber() + " " + timsAccount.getCostomerName());
 		
 		
 
