@@ -5,11 +5,18 @@ public class Account {
 	private double balance;
 	
 	public Account () {
+		this("83492", 12.23, "Default", "Default", "Default");
 		System.out.println("Empty constructor called");
 	}
 	
 	public Account (String number, double balance, String costomerName, String costomerEmail, String costomerPhone) {
 		System.out.println("Constructor with parameter called");
+		/** It's better not to call SETTERS or other METHOD in constructor.
+		 *  They are better access directly
+		 *  @reason
+		 *  1. This is the point where the object is being created
+		 *  2. Some aspect of the initialization may have not been completed
+		 */
 		this.number = number;
 		this.balance = balance;
 		this.costomerName = costomerName;
