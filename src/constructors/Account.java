@@ -20,7 +20,7 @@ public class Account {
 	}
 	
 	public Account(String costomerName, String costomerEmail, String costomerPhone) {
-		this("83492", 12.23, "Default", "Default", "Default");
+		this("83492", 12.23, costomerName, costomerEmail, costomerPhone);
 		System.out.println("Constructor with require name, email and phone called");
 	}
 	
