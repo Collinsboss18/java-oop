@@ -12,6 +12,7 @@ public class Main {
 		
 		Highlander highlander = new Highlander(21);
 		highlander.accelerate(20);
+		highlander.accelerate(14);
 
 	}
 
