@@ -18,4 +18,9 @@ public class Car extends Vehicle {
 		System.out.println("Current gear changed to " + this.currentGear);
 	}
 	
+	public void changeVelocity(int speed, int direction) {
+		move(speed, direction);
+		System.out.println("Car velocity = " + speed + " direction = " + direction);
+	}
+	
 }
