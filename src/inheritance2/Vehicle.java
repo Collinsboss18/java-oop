@@ -38,5 +38,9 @@ public class Vehicle {
 	public int getCurrentVelocity() {
 		return currentVelocity;
 	}
+	
+	public void stop() {
+		this.currentVelocity = 0;
+	}
 
 }
